@@ -3,6 +3,7 @@
 #define DATA_HPP
 
 #endif // DATA_HPP
+//存储所有数据(作用域仅在函数内的除外)
 #include<bits/stdc++.h>
 using namespace std;
 char file_name[_MAX_FNAME];
