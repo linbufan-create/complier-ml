@@ -6,12 +6,9 @@
 //3.  print("")//输出字符串
 #include<bits/stdc++.h>
 #include"read.h"
+#include"data.hpp"
 using namespace std;
-char file_name[_MAX_FNAME];
-char asm_name[_MAX_FNAME];
-size_t size_of_file_content;
-stack<char> stk;//用来配对大小括号
-string code_function;//暂时不考虑实现
+
 
 //文件头
 void write_heads()
