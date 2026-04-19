@@ -5,7 +5,8 @@
 //2.  char c  //新建字符变量
 //3.  print("")//输出字符串
 #include<bits/stdc++.h>
-#include"read.h"
+#include"read.hpp"
+#include"WindowsAPI.hpp"
 #include"data.hpp"
 using namespace std;
 
