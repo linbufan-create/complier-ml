@@ -1,6 +1,7 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-void write_head(){
+void write_head()
+{
     cout << ".386" << endl;
     cout << ".model flat,stdcall" << endl;
     cout << "" << endl;
@@ -15,12 +16,12 @@ void write_head(){
     cout << "STD_OUTPUT_HANDLE equ -11" << endl;
     cout << "STD_INPUT_HANDLE equ -10 " << endl;
 }
-void write_code() {
-
+void write_code()
+{
 }
-void write_data() {
-
+void write_data()
+{
 }
-void write_function() {
-
+void write_function()
+{
 }
