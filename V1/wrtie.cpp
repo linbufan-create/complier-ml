@@ -16,12 +16,15 @@ void write_head()
     cout << "STD_OUTPUT_HANDLE equ -11" << endl;
     cout << "STD_INPUT_HANDLE equ -10 " << endl;
 }
+//输出代码部分的汇编代码
 void write_code()
 {
 }
+//输出数据部分的汇编代码
 void write_data()
 {
 }
+//输出函数部分的汇编代码
 void write_function()
 {
 }
