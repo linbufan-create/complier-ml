@@ -6,3 +6,4 @@
 #include<bits/stdc++.h>
 using namespace std;
 string read(const char filename[]){}
+string get_name(int line,int pos){}

@@ -8,6 +8,7 @@
 #include"read.hpp"
 #include"WindowsAPI.hpp"
 #include"data.hpp"
+#include"wrtie.hpp"
 using namespace std;
 
 void get_path(){
@@ -118,33 +119,15 @@ void split(){
     file_content_split.push_back(temp);
     return;
 }
-//将一行分成几个部分
-vector<string> split_token(string &line){
-    string temp="";
-    vector<string> ans;
-    for(char c:line){
-        string s(1,c);
-        
-    }
-    ans.push_back(temp);
-    return ans;
-}
-//解析每一行
-void parse_line(string &line){
-    while(line[0]==' '){
-        line.erase(0,1);
-    }
-    while(line[line.size()-1]==' '){
-        line.erase(line.size()-1,1);
-    }
-    vector<string> line_split=split_token(line);
-    
-}
 //解析文件
 void parse_file(){
-    for(string line:file_content_split){
-        parse_line(line);
-    }
+   for(int i=0;i<file_content_split.size();i++){
+        string &line=file_content_split[i];
+        while(line[0]==' '){
+            line.erase(0);
+        }
+        
+   }
 }
 //输出函数部分的汇编代码(暂时不考虑实现)
 void write_function(){
@@ -175,7 +158,7 @@ int main(int argc,char* argv[]){
         return EXIT_FAILURE;
     }
     get_path();
-    write_heads();
+    write_head();
     get_all_filename(argv[1]);
     freopen(file_name,"w",stdout);
     split();
