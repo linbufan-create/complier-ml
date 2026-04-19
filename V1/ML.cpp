@@ -10,7 +10,10 @@
 #include"data.hpp"
 using namespace std;
 
-
+void get_path(){
+    self_path=GetSelfPath();
+    file_path=GetFilePath();
+}
 //文件头
 void write_heads()
 {
@@ -171,6 +174,7 @@ int main(int argc,char* argv[]){
         cout<<"ERROR:CAN NOT FIND OR OPEN THE FILE\n";
         return EXIT_FAILURE;
     }
+    get_path();
     write_heads();
     get_all_filename(argv[1]);
     freopen(file_name,"w",stdout);
